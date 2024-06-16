@@ -7,6 +7,7 @@ function App() {
   // let counter = 0;
   const [counter, setCounter] = useState(0); //initalizing counter with 0, setCounter is a method
 
+  /**set value*/
   const addValue = () =>{
     // counter++;
     // console.log(counter);
@@ -22,7 +23,7 @@ function App() {
     setCounter((prevCounter) => prevCounter + 1);
     setCounter((prevCounter) => prevCounter + 1);
   }
-
+  /**remove value*/
   const removeValue = () =>{
     setCounter(counter-1);
   }
