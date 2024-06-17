@@ -20,7 +20,7 @@ function Card({username = "anonymous", post = "Not assigned yet"}) {
                     {username}
                 </div>
                 <div className="text-slate-700 dark:text-slate-500">
-                    Software Engineer,Microsoft
+                    {post}
                 </div>
                 </figcaption>
             </div>
