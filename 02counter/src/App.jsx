@@ -19,13 +19,21 @@ function App() {
     // setCounter(counter+1);
     /**if we want to call each and everyone, 
      * than we have define our own call back method for setCounter */
-    setCounter((prevCounter) => {return (prevCounter+1);});
-    setCounter((prevCounter) => prevCounter + 1);
-    setCounter((prevCounter) => prevCounter + 1);
+    // setCounter((prevCounter) => {return (prevCounter+1);});
+    // setCounter((prevCounter) => prevCounter + 1);
+    // setCounter((prevCounter) => prevCounter + 1);
+
+    //setting limitation, it could be at max 20
+    if(counter<20){
+      setCounter(counter+1);
+    }
   }
   /**remove value*/
   const removeValue = () =>{
-    setCounter(counter-1);
+    //it can't be negative 
+    if(counter>0){
+      setCounter(counter-1);
+    }
   }
 
   return (
